@@ -18,7 +18,7 @@ AUTO_REPORT_TIME = "08:45"  # Время автоматического отче
 # ---------------- FUNCTIONS ----------------
 def send_unknown_alert(photo_path):
     msg = EmailMessage()
-    msg["Subject"] = "⚠️ НЕИЗВЕСТНЫЙ ЧЕЛОВЕК ОБНАРУЖЕН"
+    msg["Subject"] = "НЕИЗВЕСТНЫЙ ЧЕЛОВЕК ОБНАРУЖЕН"
     msg["From"] = EMAIL
     msg["To"] = DIRECTOR_EMAIL
     msg.set_content("Неизвестный человек был обнаружен камерой школы")
